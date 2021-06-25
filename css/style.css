@@ -6,6 +6,8 @@
 @import url(./components/button.css);
 @import url(./components/icons-header.css);
 @import url(./components/services-avatar.css);
+@import url(./components/counter.css);
+@import url(./components/cards.css);
 
 /* Globals */
 *{
