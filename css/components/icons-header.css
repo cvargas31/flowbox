@@ -1,0 +1,46 @@
+.icons-container{
+  /* border: 1px solid red; */
+  position: absolute;
+  bottom: 0;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon-card {
+  /* border: 1px solid blue; */
+  background-color: rgba(49, 49, 49, 0.596);
+  background-position: center;
+  background-image: url('/images/tabs_bg.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+  width: 290px;
+  transition: all 0.5s ease;
+}
+
+
+
+.icon-card:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+.icon-card p {
+  color: white;
+}
+
+
+.icon-card img {
+  width: 50px;
+}
+
+.cards {
+  height: 400px;
+}
