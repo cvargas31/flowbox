@@ -1,37 +1,49 @@
-header{
+header {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(/images/pexels-pixabay-262353.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(/images/pexels-pixabay-262353.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-nav {
-  position: fixed;
-  z-index: 5;
-  width: 100%;
-  margin:0 auto;
-  transition: all 0.3s ease;
-}
-
-.nav-container {
+#nav {
   height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
   margin: 0 auto;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  transition: all 0.3s ease;
 }
+
+/* nav {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  transition: all 0.3s ease;
+} */
+
+/* .nav-container {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+} */
 
 nav.sticky {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.562);
 }
 
-.nav-container img {
+.logo img {
   width: 150px;
 }
 
@@ -43,6 +55,7 @@ nav.sticky {
   list-style: none;
   font-weight: 500;
   color: white;
+  margin-right: 40px;
 }
 
 .hero-info {
@@ -54,20 +67,85 @@ nav.sticky {
   position: relative;
 }
 
-.hero-info h1{
+.hero-info h1 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 500;
-  font-size: 46px;
+  font-size: 2.5em;
   background-color: #111;
+  text-align: center;
+
 }
 
 .hero-info h2 {
   color: white;
+  font-size: 1em;
   letter-spacing: 2px;
   font-weight: 300;
+  width: 50%;
+  text-align: center;
+}
 
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+  display: none;
 }
 
 
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 40px;
+  }
+
+  #nav {
+    background-color: black;
+  }
+
+  .nav-links {
+    margin-right: 0;
+    width: 25%;
+    position: absolute;
+    right: 0px;
+    height: 25vh;
+    top: 10vh;
+    background-color: #E74336;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(-150%);
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-active {
+    transform: translateY(0%);
+  }
+
+  .menu-container {
+    display: block;
+    margin-right: 40px;
+    color: white;
+    font-size: 20px;
+  }
+
+  @keyframes navLinkFade {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .hero-info h1{
+    width: 80%;
+    font-size: 1.5em;
+  }
+}

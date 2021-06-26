@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flowbox</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -17,18 +17,21 @@
   <body>
     <header>
       <nav id="nav">
-        <div class="nav-container">
+        <!-- <div class="nav-container"> -->
           <div class="logo">
             <a href=""><img src="/images/Untitled-1.png" alt="" srcset="" /></a>
           </div>
-          <div class="nav-list">
+          <!-- <div class="nav-list"> -->
             <ul class="nav-links">
               <li>Contact</li>
               <li>About Us</li>
               <li>Tarifas</li>
             </ul>
+          <!-- </div> -->
+          <div class="menu-container">
+            <i class="fas fa-bars"></i>
           </div>
-        </div>
+        <!-- </div> -->
       </nav>
       <div class="hero-info">
         <h1>Traemos Todas tus Compras</h1>
@@ -88,7 +91,7 @@
       <section id="counter">
         <div class="counter-container">
           <div class="counter-info-container">
-            <h5>numeros que hablan </h5>
+            <h5>numeros que hablan</h5>
             <p></p>
           </div>
           <div class="counter-info-container">
@@ -108,50 +111,73 @@
           </div>
         </div>
       </section>
+      <section id="prices">
+        <div class="prices-container">
+          <div class="title">nuestras tarifas</div>
+          <div class="info-container">
+            <div class="left-info-section">
+              <h4>Tarifa Express</h4>
+              <p>
+                Paga sólo por lo que traigas. Cobramos en base al peso de tu
+                mercancía y no sobre el valor de la misma. No cobramos anualidad
+                ni mensualidad.
+              </p>
+            </div>
+            <div class="right-info-section">
+              <h5>peso por libra</h5>
+              <span>$2.45 x lb</span>
+              <img
+                src="/images/airplane.svg"
+                style="
+                  width: 50px;
+                  position: absolute;
+                  left: 40px;
+                  opacity: 0.5;
+                "
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div class="info-container">
+            <div class="left-info-section">
+              <h4>Tarifa Maritima</h4>
+              <p>
+                Paga sólo por lo que traigas. Cobramos en base al peso de tu
+                mercancía y no sobre el valor de la misma. No cobramos anualidad
+                ni mensualidad.
+              </p>
+            </div>
+            <div class="right-info-section">
+              <h5>peso por libra</h5>
+              <span>$1.75 x lb</span>
+              <img
+                src="/images/ship.svg"
+                style="
+                  width: 50px;
+                  position: absolute;
+                  left: 40px;
+                  opacity: 0.5;
+                "
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <img src="/images/flowbox-white-logo-modified.png" alt="" srcset="" />
+          <p>siguenos</p>
+          <div class="footer-links">
+            <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+            <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
+          </div>
+        </div>
+      </footer>
     </main>
-    <section id="prices">
-      <div class="prices-container">
-        <div class="title">nuestras tarifas</div>
-        <div class="info-container">
-          <div class="left-info-section">
-            <h4>Tarifa Express</h4>
-            <p>Paga sólo por lo que traigas.
-              Cobramos en base al peso de tu mercancía y no sobre el valor de la misma.
-              No cobramos anualidad ni mensualidad.</p>
-          </div>
-          <div class="right-info-section">
-            <h5>peso por libra</h5>
-            <span>$2.45 x lb</span>
-            <img src="/images/airplane.svg" style="width:50px; position: absolute; left: 40px; opacity: 0.5;" alt="" srcset="">
-
-          </div>
-        </div>
-        <div class="info-container">
-          <div class="left-info-section">
-            <h4>Tarifa Maritima</h4>
-            <p>Paga sólo por lo que traigas.
-              Cobramos en base al peso de tu mercancía y no sobre el valor de la misma.
-              No cobramos anualidad ni mensualidad.</p>
-          </div>
-          <div class="right-info-section">
-            <h5>peso por libra</h5>
-            <span>$1.75 x lb</span>
-            <img src="/images/ship.svg" style="width:50px; position: absolute; left: 40px; opacity: 0.5;" alt="" srcset="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-container">
-        <img src="/images/flowbox-white-logo-modified.png" alt="" srcset="">
-        <p>siguenos</p>
-        <div class="footer-links">
-          <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-          <a href=""><i class="fab fa-facebook fa-2x"></i></a>
-          <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
-        </div>
-      </div>
-    </footer>
     <script src="/js/app.js"></script>
   </body>
 </html>

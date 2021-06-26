@@ -1,4 +1,4 @@
-.icons-container{
+.icons-container {
   /* border: 1px solid red; */
   position: absolute;
   bottom: 0;
@@ -9,10 +9,9 @@
 }
 
 .icon-card {
-  /* border: 1px solid blue; */
   background-color: rgba(49, 49, 49, 0.596);
   background-position: center;
-  background-image: url('/images/tabs_bg.png');
+  background-image: url("/images/tabs_bg.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -26,8 +25,6 @@
   transition: all 0.5s ease;
 }
 
-
-
 .icon-card:hover {
   background-color: rgb(49, 49, 49);
 }
@@ -36,11 +33,23 @@
   color: white;
 }
 
-
 .icon-card img {
   width: 50px;
 }
 
-.cards {
-  height: 400px;
+
+@media screen and (max-width: 768px) {
+
+  .icons-container {
+    width: 700px;
+  }
+
+  .icon-card {
+    height: 115px;
+    width: 215px;
+  }
+
+  .icon-card p {
+    font-size: 0.80em;
+  }
 }
