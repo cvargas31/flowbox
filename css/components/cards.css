@@ -1,4 +1,83 @@
 #prices {
-  height: 70vh;
-  background-color: #1F2E39;
+  height: 75vh;
+  background-color: #1f2e39;
+}
+
+.prices-container {
+  width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.left-info-section{
+  width: 40%;
+  text-align: justify;
+}
+
+.left-info-section h4 {
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+
+.left-info-section p {
+  color: #9ba7b1;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.right-info-section {
+  background-color: rgba(136, 136, 136, 0.596);
+  background-position: center;
+  background-image: url('/images/tabs_bg.png');
+  background-repeat: no-repeat;
+  background-position: left ;
+  background-size: contain;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.right-info-section:hover{
+  background-color: rgb(49, 49, 49);
+}
+
+.right-info-section h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #b8c7d3;
+}
+
+.right-info-section span {
+  font-size: 32px;
+  color: #b8c7d3;
+  font-weight: 700;
 }

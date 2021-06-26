@@ -8,7 +8,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* border: 1px solid red; */
   height: 100%;
 }
 
@@ -33,11 +32,9 @@
   justify-content: space-between;
   align-items: center;
   width: 1100px;
-  /* border: 1px solid blue; */
 }
 
 .avatar-info {
-  /* border: 1px solid red; */
   height: 240px;
   width: 300px;
   display: flex;
