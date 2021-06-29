@@ -1,12 +1,10 @@
 header {
   height: 100vh;
-  width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(/images/pexels-pixabay-262353.jpg);
+    url(/images/chuttersnap-P7dmfrpYBTo-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 #nav {
