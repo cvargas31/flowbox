@@ -4,7 +4,7 @@
 }
 
 .prices-container {
-  width: 1400px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -28,8 +28,8 @@
   width: 100%;
 }
 
-.left-info-section{
-  width: 40%;
+.left-info-section {
+  width: 50%;
   text-align: justify;
 }
 
@@ -50,9 +50,9 @@
 .right-info-section {
   background-color: rgba(136, 136, 136, 0.596);
   background-position: center;
-  background-image: url('/images/tabs_bg.png');
+  background-image: url("/images/tabs_bg.png");
   background-repeat: no-repeat;
-  background-position: left ;
+  background-position: left;
   background-size: contain;
   width: 40%;
   border-radius: 10px;
@@ -65,7 +65,11 @@
   position: relative;
 }
 
-.right-info-section:hover{
+.img-text-container {
+  margin-left: 40px;
+}
+
+.right-info-section:hover {
   background-color: rgb(49, 49, 49);
 }
 
@@ -80,4 +84,54 @@
   font-size: 32px;
   color: #b8c7d3;
   font-weight: 700;
+}
+
+@media screen and (max-width: 716px) {
+  
+  .info-container {
+    align-items: center;
+  }
+
+  .right-info-section {
+    height: 100px;
+  }
+  
+  .right-info-section img {
+    left: 10px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #prices {
+    height: 100vh;
+  }
+
+  .prices-container {
+    width: 100%;
+  }
+
+  .info-container {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+  }
+
+  .left-info-section {
+    width: 100%;
+  }
+
+  .right-info-section {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+  }
+
+  .right-info-section h5{
+    font-size: 14px;
+  }
+  
+  .right-info-section span {
+    font-size: 22px;
+  }
 }

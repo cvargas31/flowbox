@@ -1,6 +1,6 @@
 #services {
-  height: 700px;
   background-color: #F7F6F2;
+  margin: 40px 0px;
 }
 
 .services-container {
@@ -8,7 +8,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
 }
 
 .info-header{
@@ -31,7 +30,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 1100px;
+  height: 50vh;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .avatar-info {
@@ -64,4 +65,36 @@
 .avatar-info img {
   width: 60px;
   height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .services-box{
+    height: 575px;
+  }
+
+ .info-header {
+   margin: 50px 0;
+ }
+
+ .avatars {
+   flex-direction: column;
+   height: 75vh;
+ }
+
+ .avatar-info {
+   height: 165px;
+   width: auto;
+ }
+
+ #services .contact-btn {
+   margin: 40px;
+ }
+}
+
+@media screen and (max-width: 414px) {
+
+  .avatar-info {
+    margin: 0 20px;
+  }
 }

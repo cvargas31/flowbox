@@ -2,10 +2,13 @@
   /* border: 1px solid red; */
   position: absolute;
   bottom: 0;
-  width: 900px;
+  width: 100%;
+  max-width: 960px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* border: 1px solid blue; */
+  margin: 0 auto;
 }
 
 .icon-card {
@@ -21,8 +24,14 @@
   justify-content: space-around;
   align-items: center;
   height: 140px;
-  width: 290px;
+  /* width: 290px; */ 
   transition: all 0.5s ease;
+}
+
+.box {
+  /* border: 1px solid red; */
+  width: 300px;
+  flex-shrink: 1;
 }
 
 .icon-card:hover {
@@ -37,19 +46,26 @@
   width: 50px;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
   .icons-container {
-    width: 700px;
+    max-width: 780px;
   }
 
-  .icon-card {
-    height: 115px;
-    width: 215px;
-  }
+ .box {
+   width: 250px;
+ }
+}
 
+@media screen and (max-width: 768px) {
+  .icons-container {
+    display: none;
+  }
   .icon-card p {
-    font-size: 0.80em;
+    font-size: 0.8em;
   }
+}
+
+@media screen and (max-width: 414px) {
+
 }

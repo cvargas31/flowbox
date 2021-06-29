@@ -17,21 +17,19 @@
   <body>
     <header>
       <nav id="nav">
-        <!-- <div class="nav-container"> -->
+        <div class="nav-container">
           <div class="logo">
             <a href=""><img src="/images/Untitled-1.png" alt="" srcset="" /></a>
           </div>
-          <!-- <div class="nav-list"> -->
             <ul class="nav-links">
-              <li>Contact</li>
-              <li>About Us</li>
-              <li>Tarifas</li>
+              <li><a class="links" href="#services">Sobre Nosotros</a></li>
+              <li><a class="links" href="#prices">Tarifas</a></li>
+              <li><a class="links" href="https://wa.me/+50762149339" target="_blank">Contactanos</a></li>
             </ul>
-          <!-- </div> -->
           <div class="menu-container">
             <i class="fas fa-bars"></i>
           </div>
-        <!-- </div> -->
+        </div>
       </nav>
       <div class="hero-info">
         <h1>Traemos Todas tus Compras</h1>
@@ -40,17 +38,24 @@
           <a href="https://wa.me/+50762149339">abrir casillero ></a>
         </div>
         <div class="icons-container">
-          <div class="icon-card">
-            <img src="/images/air-freight.svg" alt="" srcset="" />
-            <p>Carga Aerea</p>
+          <div class="box">
+            <div class="icon-card">
+              <img src="/images/air-freight.svg" alt="" srcset="" />
+              <p>Carga Aerea</p>
+            </div>
           </div>
-          <div class="icon-card">
-            <img src="/images/ship.svg" alt="" srcset="" />
-            <p>Carga Maritima</p>
+          <div class="box">
+            <div class="icon-card">
+              <img src="/images/ship.svg" alt="" srcset="" />
+              <p>Carga Maritima</p>
+            </div>
           </div>
-          <div class="icon-card">
-            <img src="/images/truck.svg" alt="" srcset="" />
-            <p>Delivery gratis</p>
+          <div class="box">
+
+            <div class="icon-card">
+              <img src="/images/truck.svg" alt="" srcset="" />
+              <p>Delivery gratis</p>
+            </div>
           </div>
         </div>
       </div>
@@ -62,52 +67,56 @@
             <p>porque nosotros</p>
             <span>Nuestras Ventajas</span>
           </div>
-          <div class="avatars">
-            <div class="avatar-info">
-              <div class="avatar-container">
-                <img src="/images/money.svg" alt="" />
+          <div class="services-box">
+            <div class="avatars">
+              <div class="avatar-info">
+                <div class="avatar-container">
+                  <img src="/images/money.svg" alt="" />
+                </div>
+                <h3>tarifas competitivas</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
-              <h3>tarifas competitivas</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="avatar-info">
-              <div class="avatar-container">
-                <img src="/images/honesty.svg" alt="" />
+              <div class="avatar-info">
+                <div class="avatar-container">
+                  <img src="/images/honesty.svg" alt="" />
+                </div>
+                <h3>confianza y puntualidad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
-              <h3>confianza y puntualidad</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="avatar-info">
-              <div class="avatar-container">
-                <img src="/images/shipping.svg" alt="" />
+              <div class="avatar-info">
+                <div class="avatar-container">
+                  <img src="/images/shipping.svg" alt="" />
+                </div>
+                <h3>solo peso real</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
-              <h3>solo peso real</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
           </div>
           <div class="contact-btn"><a href="#">Aprende mas ></a></div>
         </div>
       </section>
       <section id="counter">
-        <div class="counter-container">
-          <div class="counter-info-container">
-            <h5>numeros que hablan</h5>
-            <p></p>
-          </div>
-          <div class="counter-info-container">
-            <img src="/images/airplane.svg" alt="" srcset="" />
-            <h4><i class="fas fa-plus"></i> 150</h4>
-            <p>Vuelos Semanales</p>
-          </div>
-          <div class="counter-info-container">
-            <img src="/images/package.svg" alt="" srcset="" />
-            <h4><i class="fas fa-plus"></i> 300</h4>
-            <p>Paquetes Entregados</p>
-          </div>
-          <div class="counter-info-container">
-            <img src="/images/customer.svg" alt="" srcset="" />
-            <h4><i class="fas fa-plus"></i> 100</h4>
-            <p>Clientes Satisfechos</p>
+        <div class="counter-box">
+          <div class="counter-container">
+            <div class="counter-info-container">
+              <h5>numeros que hablan</h5>
+              <p></p>
+            </div>
+            <div class="counter-info-container">
+              <img src="/images/airplane.svg" alt="" srcset="" />
+              <h4><i class="fas fa-plus"></i> 150</h4>
+              <p>Vuelos Semanales</p>
+            </div>
+            <div class="counter-info-container">
+              <img src="/images/package.svg" alt="" srcset="" />
+              <h4><i class="fas fa-plus"></i> 300</h4>
+              <p>Paquetes Entregados</p>
+            </div>
+            <div class="counter-info-container">
+              <img src="/images/customer.svg" alt="" srcset="" />
+              <h4><i class="fas fa-plus"></i> 100</h4>
+              <p>Clientes Satisfechos</p>
+            </div>
           </div>
         </div>
       </section>
@@ -124,8 +133,10 @@
               </p>
             </div>
             <div class="right-info-section">
-              <h5>peso por libra</h5>
-              <span>$2.45 x lb</span>
+              <div class="img-text-container">
+                <h5>peso por libra</h5>
+                <span>$2.45 x lb</span>
+              </div>
               <img
                 src="/images/airplane.svg"
                 style="
@@ -149,8 +160,10 @@
               </p>
             </div>
             <div class="right-info-section">
-              <h5>peso por libra</h5>
-              <span>$1.75 x lb</span>
+              <div class="img-text-container">
+                <h5>peso por libra</h5>
+                <span>$1.75 x lb</span>
+              </div>
               <img
                 src="/images/ship.svg"
                 style="

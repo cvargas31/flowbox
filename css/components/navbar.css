@@ -10,33 +10,26 @@ header {
 }
 
 #nav {
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+
   position: fixed;
   z-index: 5;
   width: 100%;
   transition: all 0.3s ease;
 }
 
-/* nav {
-  position: fixed;
-  z-index: 5;
-  width: 100%;
-  transition: all 0.3s ease;
-} */
-
-/* .nav-container {
-  height: 80px;
+.nav-container {
   display: flex;
-  flex-direction: row;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-} */
+  margin: 0 50px;
+  height: 100px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
 
 nav.sticky {
   width: 100%;
@@ -51,11 +44,11 @@ nav.sticky {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  width: 400px;
   list-style: none;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
-  margin-right: 40px;
+
 }
 
 .hero-info {
@@ -75,7 +68,6 @@ nav.sticky {
   font-size: 2.5em;
   background-color: #111;
   text-align: center;
-
 }
 
 .hero-info h2 {
@@ -83,7 +75,6 @@ nav.sticky {
   font-size: 1em;
   letter-spacing: 2px;
   font-weight: 300;
-  width: 50%;
   text-align: center;
 }
 
@@ -93,7 +84,6 @@ nav.sticky {
   display: none;
 }
 
-
 @media screen and (max-width: 768px) {
   .logo {
     margin-left: 40px;
@@ -102,15 +92,19 @@ nav.sticky {
   #nav {
     background-color: black;
   }
+  
+  .nav-container {
+    height: 104px;
+  }
 
   .nav-links {
     margin-right: 0;
-    width: 25%;
+    width: 50%;
     position: absolute;
     right: 0px;
-    height: 25vh;
-    top: 10vh;
-    background-color: #E74336;
+    height: 50vh;
+    top: 14vh;
+    background-color: #e74336;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,17 +128,17 @@ nav.sticky {
   }
 
   @keyframes navLinkFade {
-    from{
+    from {
       opacity: 0;
       transform: translateX(50px);
     }
-    to{
+    to {
       opacity: 1;
       transform: translateX(0px);
     }
   }
 
-  .hero-info h1{
+  .hero-info h1 {
     width: 80%;
     font-size: 1.5em;
   }

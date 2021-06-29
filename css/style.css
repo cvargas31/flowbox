@@ -20,4 +20,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+  background-color: #F7F6F2;
 }
