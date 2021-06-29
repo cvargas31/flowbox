@@ -95,6 +95,8 @@ nav.sticky {
   
   .nav-container {
     height: 104px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .nav-links {
