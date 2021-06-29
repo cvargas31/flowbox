@@ -7,9 +7,8 @@ footer {
 margin: auto;
 display: flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
-width: 400px;
 height: 300px;
 }
 
@@ -48,4 +47,8 @@ footer img {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+  
 }

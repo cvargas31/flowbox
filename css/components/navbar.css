@@ -144,3 +144,18 @@ nav.sticky {
     font-size: 1.5em;
   }
 }
+
+
+/* @media screen and (max-width: 360px) {
+
+  .nav-container {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 330px) {
+  .nav-container {
+    width: 100%;
+  }
+} */

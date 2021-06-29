@@ -135,3 +135,23 @@
     font-size: 22px;
   }
 }
+
+@media screen and (max-width: 360px) {
+
+  .title {
+    font-size: 26px;
+  }
+
+  #prices {
+    height: auto;
+  }
+  
+  .prices-container {
+    height: 700px;
+  }
+
+  .left-info-section h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+}

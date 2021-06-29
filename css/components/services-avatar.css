@@ -98,3 +98,27 @@
     margin: 0 20px;
   }
 }
+
+@media screen and (max-width:360px) {
+  
+  #services {
+    margin-bottom: 40px;
+  }
+
+  .info-header {
+    margin: 20px 0;
+  }
+
+  .services-box {
+    height: 410px;
+  }
+
+  .avatars{
+    height: 90vh;
+  }
+
+  #services .contact-btn {
+    margin-top: 145px;
+  }
+  
+}
